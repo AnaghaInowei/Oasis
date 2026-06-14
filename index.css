@@ -80,6 +80,23 @@
 
     .nav-logo img { height: 3rem; width: auto; }
 
+    .nav-logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .nav-line {
+      font-family: var(--f-mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      font-weight: 600;
+    }
+
     .nav-links {
       display: flex;
       align-items: center;
@@ -104,7 +121,7 @@
       background: var(--teal);
       color: var(--bg) !important;
       padding: 10px 22px;
-      border-radius: .8rem;
+      border-radius: .3rem;
       transition: background 0.2s;
     }
     .nav-cta:hover { background: var(--gold) !important; }
@@ -202,7 +219,7 @@
       background: var(--teal);
       color: var(--bg);
       padding: 14px 28px;
-      border-radius: .8rem;
+      border-radius: .3rem;
       transition: background 0.2s;
     }
     .btn-primary:hover { background: var(--gold); }
