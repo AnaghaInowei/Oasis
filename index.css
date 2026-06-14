@@ -576,6 +576,7 @@
     .team-card {
       transition: background 0.3s;
       border-radius: .8rem;
+      margin-bottom: 1rem;
     }
 
     .team-card:hover {
