@@ -117,36 +117,21 @@
       text-align: left;
       align-items: start;
       position: relative;
-      /* overflow: hidden; */
+      overflow: hidden;
       /* padding-top: 80px; */
       background-image: url(./assests/heroImg.png);
-      background-size: cover;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       /* max-width: 1440px; */
-       padding: 4rem 48px 0 48px;
+       padding: 2rem 20px 0 20px;
         margin: 0 auto;
     }
 
     /* ─── HERO ────────────────────────────────────────── */
-    /* .hero {
-      height: 100dvh;
-      width: 100dvw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: left;
-      align-items: start;
-      position: relative;
-      overflow: hidden;
-      padding-top: 80px;
-      background-image: url(./assests/heroImg.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    } */
+    .hero {
+      
+    }
 
     /* SIGNATURE: Blueprint infrastructure grid */
     /* .hero::before {
@@ -184,12 +169,12 @@
 
     h1 {
       font-family: var(--f-display);
-      font-size: clamp(52px, 6vw, 4rem);
+      font-size: clamp(37px, 6vw, 4rem);
       font-weight: 700;
       color: var(--white);
       letter-spacing: -0.03em;
       line-height: 1.0;
-      margin-bottom: 32px;
+      margin: 32px 0;
     }
     h1 em { font-style: normal; color: var(--teal); }
 
@@ -202,7 +187,7 @@
       margin-bottom: 48px;
     }
 
-    .hero-actions { display: flex; align-items: center; gap: 28px; }
+    .hero-actions { display: flex; align-items: center; gap: 28px; padding: 20px; }
 
     .btn-primary {
       font-family: var(--f-mono);
@@ -228,7 +213,9 @@
       border-bottom: 1px solid var(--teal-dim);
       transition: color 0.2s, border-color 0.2s;
     }
-    .btn-ghost:hover { color: var(--teal); border-color: var(--teal); }
+    .btn-ghost:hover { 
+      color: var(--teal); 
+      border-color: var(--teal); }
 
     /* Stat bar — anchored to bottom of hero */
     .hero-stats {
@@ -693,7 +680,10 @@
 
     /* ─── RESPONSIVE ─────────────────────────────────── */
     @media (max-width: 900px) {
-      .container { padding: 0 24px; }
+      /* .container { padding: 0 24px; } */
+      .hero-actions {
+        padding: 0;
+      }
       nav { padding: 16px 24px; }
       .nav-links li:not(:last-child) { display: none; }
       .hero-stats { grid-template-columns: 1fr 1fr; }
