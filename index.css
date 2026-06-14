@@ -78,7 +78,7 @@
       margin: 0 auto;
     }
 
-    .nav-logo img { height: 34px; width: auto; }
+    .nav-logo img { height: 3rem; width: auto; }
 
     .nav-links {
       display: flex;
@@ -93,7 +93,7 @@
       letter-spacing: 0.02em;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--teal); }
+    .nav-links a:hover { color: var(--gold); }
 
     .nav-cta {
       font-family: var(--f-mono);
@@ -324,7 +324,7 @@
       font-family: var(--f-display);
       font-size: 14px;
       font-weight: 600;
-      color: var(--teal);
+      color: var(--white);
       margin-bottom: 6px;
     }
 
@@ -551,11 +551,16 @@
       gap: .5rem;
     }
 
-    .team-card,
-    .team-card:hover,
-    .team-card * {
+    .team-card {
       transition: background 0.3s;
       border-radius: .8rem;
+    }
+
+    .team-card:hover {
+      border: 1px solid var(--gold);
+      filter: grayscale(0%); 
+      transform: scale(1.03);
+      transition: filter 0.35s, transform 0.35s;
     }
 
     .team-photo {
@@ -563,11 +568,8 @@
       aspect-ratio: 3 / 4;
       object-fit: cover;
       object-position: center top;
-      filter: grayscale(20%);
-      transition: filter 0.35s, transform 0.35s;
+      border-radius: 1rem 1rem 0 0;
     }
-    .team-card:hover .team-photo { filter: grayscale(0%); transform: scale(1.03); }
-
     .team-info { padding: 22px 18px; }
 
     .team-role {
