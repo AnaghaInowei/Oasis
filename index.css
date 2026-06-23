@@ -213,7 +213,11 @@
       margin-bottom: 48px;
     }
 
-    .hero-actions { display: flex; align-items: center; gap: 28px; padding: 20px; }
+    .hero-actions { 
+      display: flex; 
+      align-items: 
+      center; gap: 28px;  
+    }
 
     .btn-primary {
       font-family: var(--f-mono);
